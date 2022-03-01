@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/tailwind.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/tailwind.css" />
     <title>fel</title>
-</head>
-<body class="scroll-p-full">
+  </head>
+  <body class="scroll-p-full bg-fel-black">
     <header class="w-full bg-hero bg-center bg-cover h-screen transition-all">
-        <div class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end">
-            <img src="logo.svg" class="col-start-1 col-span-full h-2/3 -z-10 row-span-full self-center">
-            <nav class="flex gap-4 w-full items-end justify-center col-start-2 row-start-1 pb-12">
-                <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black">Hem.</a>
-                <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black">Projekt.</a>
-                <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black">Kontakt.</a>
-            </nav>
-        </div>
+      <div
+        class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end"
+      >
+        <img
+          src="logo.svg"
+          class="col-start-1 col-span-full h-2/3 -z-10 row-span-full self-center"
+        />
+        <nav
+          class="flex gap-4 w-full items-end justify-center col-start-2 row-start-1 pb-12"
+        >
+          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+            >Hem.</a
+          >
+          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+            >Projekt.</a
+          >
+          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+            >Kontakt.</a
+          >
+        </nav>
+      </div>
     </header>
-    <main class="snap-mandatory grid grid-cols-2 row-start-1 mt-4">
-        <article>
+    <main>
+      <div class="grid grid-cols-2 w-full h-3/4">
+        <div>
+          <p class="text-fel-white m-9">
+            <strong>Future Experience Lab</strong> är en experimentverkstad för
+            att provköra framtiden. Och skapa den.
+          </p>
 
-            <p>
-                Future Experience Lab är en experimentverkstad för att provköra framtiden. Och skapa den.
-            </p>
-            <p>
-                Genom engagerande samarbetsmetoder, kreativitet och upptäckarlust får destinationer, organisationer, företag och individer chans att klämma, känna och smaka på framtidens upplevelser med målet att utveckla modeller för hållbar samhällsförändring.
-            </p>
+          <p class="text-fel-white m-8">
+            Genom engagerande samarbetsmetoder, kreativitet och upptäckarlust
+            får destinationer, organisationer, företag och individer chans att
+            klämma, känna och smaka på framtidens upplevelser med målet att
+            utveckla modeller för hållbar samhällsförändring.<br />
+          </p>
 
-            <p>
-                Om Future Experience Lab<br>
-                Future Experience Lab är ett innovationsinitiativ för att stärka upplevelsedestinationen Göteborg med särskilt fokus på hybridupplevelser som bidrar till samhällsförändring.
-            </p>
+          <p class="text-fel-white m-8">
+            <strong>Om Future Experience Lab</strong><br />Future Experience Lab
+            är ett innovationsinitiativ för att stärka upplevelsedestinationen
+            Göteborg med särskilt fokus på hybridupplevelser som bidrar till
+            samhällsförändring.<br />
+          </p>
 
-            <p class="h-screen"> 
-                Initiativtagare är UIrica Ramstedt från förändringsbyrån Marlon, Johan Carlberg från Yrgo och Christer Hedberg och Anna-Maria Ölander från samarbetsbyrån &friends.
-            </p>
-        </article>
+          <p class="text-fel-white m-8">
+            Initiativtagare är UIrica Ramstedt från förändringsbyrån Marlon,
+            Johan Carlberg från Yrgo och Christer Hedberg och Anna-Maria Ölander
+            från samarbetsbyrån &friends.
+          </p>
+        </div>
+
+        <div class="bg-fel-yellow">
+          <h2 class="text-fel-black text-center items-center text-xl">
+            När FEL<br />är Rätt.
+          </h2>
+        </div>
+      </div>
+
+      <img class="z-20" src="images/Full width image.png" alt="" />
+
+      <div class="w-11/12 bg-fel-red pt-5 mt-9">
+        <h2 class="text-8xl m-8 font-bold">
+          Senaste<br />
+          labbarna:
+        </h2>
+        <div class="z-20 w-11/12 relative h-fit">
+          <img class="h-full w-full" src="images/big image.png" alt="" />
+          <h3 class="text-fel-white text-8xl absolute bottom-0 z-30">LAB01</h3>
+        </div>
+      </div>
     </main>
-</body>
-<script>
-window.addEventListener('load', (event) => {
-
-    window.onscroll = () => shrink();
-
-    document.querySelector('header').classList.add('h-screen');
-    
-    function shrink() {
-        if ( document.documentElement.scrollTop) {
-            document.querySelector('header img').classList.add('h-14')
-            document.querySelector('header img').classList.remove('col-span-full')
-            document.querySelector('header div').classList.add('bg-gray-800')
-            document.querySelector('header div').classList.add('items-center')
-            document.querySelector('header div').classList.remove('h-full')
-            document.querySelector('header div').classList.remove('items-end')
-            document.querySelector('header nav').classList.remove('w-full')
-            document.querySelector('header nav').classList.remove('pb-12')
-            document.querySelector('header').style.height = document.querySelector('header div').clientHeight +"px";
-        }
-    }
-});
-</script>
+  </body>
+  <script src="scroll.js"></script>
 </html>
