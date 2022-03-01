@@ -9,6 +9,9 @@ module.exports = {
         'fel-blue': '#2522ca',
         'fel-red': '#db29fb'
       },
+      backgroundImage: {
+        'hero': 'url("http://via.placeholder.com/1920x1080")'
+      }
     },
   },
   plugins: [],

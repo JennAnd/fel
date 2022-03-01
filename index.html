@@ -7,20 +7,18 @@
     <link rel="stylesheet" type="text/css" href="styles/tailwind.css">
     <title>fel</title>
 </head>
-<body>
-    <header class="bg-gray-800 w-full">
-        <div class="max-h-screen fixed transition-all w-full z-100 top-0 px-6 py-4 grid grid-cols-2 grid-flow-col">
-            <h1 class="text-white text-[200px] leading-none ml-4 drop-shadow-lg shadow-white col-span-3">
-                FUTURE<br>EXPERIENCE<br>LABS.
-            </h1>
-            <nav class="flex gap-4 w-fit h-fit bottom-0 absolute right-10">
-                <a href="#" class="px-6 py-2 bg-yellow-400 text-black">link</a>
-                <a href="#" class="px-6 py-2 bg-yellow-400">link</a>
-                <a href="#" class="px-6 py-2 bg-yellow-400">link</a>
+<body class="scroll-p-full">
+    <header class="w-full bg-hero bg-center bg-cover h-screen transition-all">
+        <div class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end">
+            <img src="logo.svg" class="col-start-1 col-span-full h-2/3 -z-10 row-span-full self-center">
+            <nav class="flex gap-4 w-full items-end justify-center col-start-2 row-start-1 pb-12">
+                <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black">Hem.</a>
+                <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black">Projekt.</a>
+                <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black">Kontakt.</a>
             </nav>
         </div>
     </header>
-    <main class="snap-mandatory grid grid-cols-2 row-start-1">
+    <main class="snap-mandatory grid grid-cols-2 row-start-1 mt-4">
         <article>
 
             <p>
@@ -35,7 +33,7 @@
                 Future Experience Lab är ett innovationsinitiativ för att stärka upplevelsedestinationen Göteborg med särskilt fokus på hybridupplevelser som bidrar till samhällsförändring.
             </p>
 
-            <p> 
+            <p class="h-screen"> 
                 Initiativtagare är UIrica Ramstedt från förändringsbyrån Marlon, Johan Carlberg från Yrgo och Christer Hedberg och Anna-Maria Ölander från samarbetsbyrån &friends.
             </p>
         </article>
@@ -49,11 +47,15 @@ window.addEventListener('load', (event) => {
     document.querySelector('header').classList.add('h-screen');
     
     function shrink() {
-        if ( document.documentElement.scrollTop > 1) {
-            document.querySelector('div').classList.add('py-3')
-            document.querySelector('div h1').classList.remove('text-[200px]')
-            document.querySelector('header').classList.remove('h-screen')
-            console.log(document.querySelector('header').clientHeight);
+        if ( document.documentElement.scrollTop) {
+            document.querySelector('header img').classList.add('h-14')
+            document.querySelector('header img').classList.remove('col-span-full')
+            document.querySelector('header div').classList.add('bg-gray-800')
+            document.querySelector('header div').classList.add('items-center')
+            document.querySelector('header div').classList.remove('h-full')
+            document.querySelector('header div').classList.remove('items-end')
+            document.querySelector('header nav').classList.remove('w-full')
+            document.querySelector('header nav').classList.remove('pb-12')
             document.querySelector('header').style.height = document.querySelector('header div').clientHeight +"px";
         }
     }
