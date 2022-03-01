@@ -12,6 +12,13 @@ module.exports = {
       backgroundImage: {
         hero: 'url("http://via.placeholder.com/1920x1080")',
       },
+      fontSize: {
+        h1: "222px",
+        h2: "137px",
+        h3: "52px",
+        h4: "32px",
+        normal: "20px",
+      },
     },
   },
   plugins: [],
