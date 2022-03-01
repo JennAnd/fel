@@ -7,20 +7,27 @@
     <link rel="stylesheet" type="text/css" href="styles/tailwind.css" />
     <title>fel</title>
   </head>
-  <body class="bg-fel-black">
-    <header class="bg-gray-800 w-full">
+  <body class="scroll-p-full bg-fel-black">
+    <header class="w-full bg-hero bg-center bg-cover h-screen transition-all">
       <div
-        class="max-h-screen fixed transition-all w-full z-100 top-0 px-6 py-4 grid grid-cols-2 grid-flow-col"
+        class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end"
       >
-        <h1
-          class="text-white text-[200px] leading-none ml-4 drop-shadow-lg shadow-white col-span-3"
+        <img
+          src="logo.svg"
+          class="col-start-1 col-span-full h-2/3 -z-10 row-span-full self-center"
+        />
+        <nav
+          class="flex gap-4 w-full items-end justify-center col-start-2 row-start-1 pb-12"
         >
-          FUTURE<br />EXPERIENCE<br />LABS.
-        </h1>
-        <nav class="flex gap-4 w-fit h-fit bottom-0 absolute right-10">
-          <a href="#" class="px-6 py-2 bg-yellow-400 text-black">link</a>
-          <a href="#" class="px-6 py-2 bg-yellow-400">link</a>
-          <a href="#" class="px-6 py-2 bg-yellow-400">link</a>
+          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+            >Hem.</a
+          >
+          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+            >Projekt.</a
+          >
+          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+            >Kontakt.</a
+          >
         </nav>
       </div>
     </header>
@@ -59,10 +66,8 @@
           </h2>
         </div>
       </div>
-    </main>
 
-    <img class="z-20" src="images/Full width image.png" alt="" />
-
+      <img class="z-20" src="images/Full width image.png" alt="" />
     <div class="w-11/12 bg-fel-red pt-5 mt-9">
       <h2 class="text-8xl m-8 font-bold">
         Senaste<br />
@@ -75,25 +80,9 @@
         >
           LAB01
         </h3>
-      </div>
-    </div>
+
+   </div>
+    </main>
   </body>
-  <script>
-    window.addEventListener("load", (event) => {
-      window.onscroll = () => shrink();
-
-      document.querySelector("header").classList.add("h-screen");
-
-      function shrink() {
-        if (document.documentElement.scrollTop > 1) {
-          document.querySelector("div").classList.add("py-3");
-          document.querySelector("div h1").classList.remove("text-[200px]");
-          document.querySelector("header").classList.remove("h-screen");
-          console.log(document.querySelector("header").clientHeight);
-          document.querySelector("header").style.height =
-            document.querySelector("header div").clientHeight + "px";
-        }
-      }
-    });
-  </script>
+  <script src="scroll.js"></script>
 </html>
