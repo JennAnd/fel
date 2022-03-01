@@ -5,9 +5,9 @@ window.addEventListener("load", (event) => {
 
   function shrink() {
     if (document.documentElement.scrollTop) {
-      document.querySelector("header img").classList.add("h-12");
+      document.querySelector("header img").classList.add("h-20");
       document.querySelector("header img").classList.remove("col-span-full");
-      document.querySelector("header div").classList.add("bg-gray-800");
+      document.querySelector("header div").classList.add("bg-fel-black");
       document.querySelector("header div").classList.add("items-center");
       document.querySelector("header div").classList.remove("h-full");
       document.querySelector("header div").classList.remove("items-end");

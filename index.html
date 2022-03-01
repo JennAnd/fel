@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/tailwind.css" />
     <title>fel</title>
   </head>
   <body class="scroll-p-full bg-fel-black">
-    <header class="w-full bg-hero bg-center bg-cover h-screen transition-all">
+    <main>
+    <header class="w-full bg-hero bg-center bg-cover h-screen transition-all relative z-100">
       <div
-        class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end"
+        class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end translate-x-0"
       >
         <img
           src="logo.svg"
@@ -19,19 +21,18 @@
         <nav
           class="flex gap-4 w-full items-end justify-center col-start-2 row-start-1 pb-12"
         >
-          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+          <a href="#" class="py-4 px-6 text-2xl text-fel-yellow"
             >Hem.</a
           >
-          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+          <a href="#" class="py-4 px-6 text-2xl text-fel-yellow"
             >Projekt.</a
           >
-          <a href="#" class="py-4 px-6 text-lg bg-fel-yellow text-fel-black"
+          <a href="#" class="py-4 px-6 text-2xl text-fel-yellow"
             >Kontakt.</a
           >
         </nav>
       </div>
     </header>
-    <main>
       <div class="grid grid-cols-2 w-full h-3/4">
         <div>
           <p class="text-fel-white m-9">
@@ -66,15 +67,14 @@
           </h2>
         </div>
       </div>
-
-      <img class="z-20" src="images/Full width image.png" alt="" />
+      <img class="z-20 w-screen" src="images/Full width image.png" alt="" />
     <div class="w-11/12 bg-fel-red pt-5 mt-9">
       <h2 class="text-8xl m-8 font-bold">
         Senaste<br />
         labbarna:
       </h2>
-      <div class="z-20 w-11/12 relative h-fit">
-        <img class="h-full w-full" src="images/big image.png" alt="" />
+      <div class="z-0 w-11/12 relative h-fit">
+        <img class="h-full w-full -z-10" src="images/big image.png" alt="" />
         <h3
           class="text-fel-white text-8xl absolute bottom-0 z-30 font-bold m-8 ml-16"
         >
@@ -86,3 +86,19 @@
   </body>
   <script src="scripts/scroll.js"></script>
 </html>
+
+
+
+
+
+<footer class="grid grid-cols-2">
+  <img src="images/Footer 1.svg"  class="col-span-full col-start-1 row-start-1 z-10 max-w-screen pointer-events-none" alt="">
+  <div class="z-20 col-start-1 row-start-1 flex items-center justify-center w-full">
+    <p class="text-h3 ml-12 mt-12">
+      Behöver du också ett Future Experience Lab för din verksamhets framtid?
+    </p>
+  </div>
+  <div class="relative h-full w-full col-start-2 row-start-1">
+    <a class="absolute top-[55%] left-[40%] text-5xl text-fel-yellow" href="mailto:mail@test.com">Kontakta oss</a>
+  </div>
+</footer>
