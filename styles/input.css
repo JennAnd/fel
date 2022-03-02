@@ -6,3 +6,23 @@ html {
 
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply relative before:content-[""];
+}
+.active:before {
+  @apply absolute left-0 right-0 -rotate-6 top-1/2 border-b-4 border-fel-yellow;
+}
+/* position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 4px solid;
+  border-color: inherit;
+
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg); */
