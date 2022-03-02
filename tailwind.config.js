@@ -11,6 +11,8 @@ module.exports = {
       },
       backgroundImage: {
         hero: 'url("http://via.placeholder.com/1920x1080")',
+        "paper-red": "url('../images/redpaper.png')",
+        "paper-blue": "url('../images/bluepaper.png')",
       },
       fontSize: {
         h1: "222px",
@@ -20,7 +22,7 @@ module.exports = {
         normal: "20px",
       },
       gridTemplateColumns: {
-        items: "min-content repeat(3, minmax(0,1fr))",
+        items: "70px repeat(3, minmax(0,1fr))",
       },
     },
   },
