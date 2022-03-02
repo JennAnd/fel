@@ -11,81 +11,98 @@
     <link rel="stylesheet" type="text/css" href="styles/tailwind.css" />
     <title>fel</title>
   </head>
-  <body class="scroll-p-full bg-fel-black">
-    <main>
-      <header
-        class="w-full bg-hero bg-center bg-cover h-screen transition-all relative z-100"
+  <body class="scroll-p-full bg-fel-black overflow-x-hidden">
+    <header
+      class="w-full bg-hero bg-center bg-cover h-screen transition-all relative z-100"
+    >
+      <div
+        class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end translate-x-0"
       >
-        <div
-          class="fixed transition-all h-full w-full z-100 top-0 px-6 py-4 grid grid-cols-2 items-end translate-x-0"
+        <img
+          src="logo.svg"
+          class="col-start-1 col-span-full h-2/3 z-10 row-span-full self-center"
+        />
+        <nav
+          class="flex gap-4 w-full items-end justify-center col-start-2 row-start-1 pb-12 relative"
         >
-          <img
-            src="logo.svg"
-            class="col-start-1 col-span-full h-2/3 -z-10 row-span-full self-center"
-          />
-          <nav
-            class="flex gap-4 w-full items-end justify-center col-start-2 row-start-1 pb-12"
+          <a href="#" class="py-4 px-6 text-2xl font-bold text-fel-yellow"
+            >Hem.</a
           >
-            <a href="#" class="py-4 px-6 text-2xl font-bold text-fel-yellow"
-              >Hem.</a
+          <a href="#" class="py-4 px-6 text-2xl font-bold text-fel-yellow"
+            >Projekt.</a
+          >
+          <a href="#" class="py-4 px-6 text-2xl font-bold text-fel-yellow"
+            >Kontakt.</a
+          >
+        </nav>
+      </div>
+    </header>
+    <div class="grid grid-cols-2 w-full relative -mb-20 -z-10">
+      <div class="h-fit">
+        <p class="text-fel-white m-8 text-lg">
+          <strong>Future Experience Lab</strong> är en experimentverkstad för
+          att provköra framtiden. Och skapa den.
+        </p>
+
+        <p class="text-fel-white m-8 text-lg">
+          Genom engagerande samarbetsmetoder, kreativitet och upptäckarlust får
+          destinationer, organisationer, företag och individer chans att klämma,
+          känna och smaka på framtidens upplevelser med målet att utveckla
+          modeller för hållbar samhällsförändring.<br />
+        </p>
+
+        <p class="text-fel-white m-8 text-lg">
+          <strong>Om Future Experience Lab</strong><br />Future Experience Lab
+          är ett innovationsinitiativ för att stärka upplevelsedestinationen
+          Göteborg med särskilt fokus på hybridupplevelser som bidrar till
+          samhällsförändring.<br />
+        </p>
+
+        <p class="text-fel-white m-8 text-lg">
+          Initiativtagare är UIrica Ramstedt från förändringsbyrån Marlon, Johan
+          Carlberg från Yrgo och Christer Hedberg och Anna-Maria Ölander från
+          samarbetsbyrån &friends.
+        </p>
+      </div>
+
+      <div class="bg-fel-blue pb-[550px] relative">
+        <h2 class="text-fel-white text-center mt-24 text-8xl font-bold">
+          När FEL<br />är Rätt.
+        </h2>
+        <a href="#">
+          <div class="flex h-min text-fel-white absolute bottom-3">
+            <svg
+              width="90"
+              height="83"
+              viewBox="0 0 90 83"
+              xmlns="http://www.w3.org/2000/svg"
+              class="-rotate-90 h-[40px] fill-fel-white"
             >
-            <a href="#" class="py-4 px-6 text-2xl font-bold text-fel-yellow"
-              >Projekt.</a
-            >
-            <a href="#" class="py-4 px-6 text-2xl font-bold text-fel-yellow"
-              >Kontakt.</a
-            >
-          </nav>
-        </div>
-      </header>
-      <div class="grid grid-cols-2 w-full h-3/4">
-        <div class="h-fit">
-          <p class="text-fel-white m-8 text-lg">
-            <strong>Future Experience Lab</strong> är en experimentverkstad för
-            att provköra framtiden. Och skapa den.
-          </p>
-
-          <p class="text-fel-white m-8 text-lg">
-            Genom engagerande samarbetsmetoder, kreativitet och upptäckarlust
-            får destinationer, organisationer, företag och individer chans att
-            klämma, känna och smaka på framtidens upplevelser med målet att
-            utveckla modeller för hållbar samhällsförändring.<br />
-          </p>
-
-          <p class="text-fel-white m-8 text-lg">
-            <strong>Om Future Experience Lab</strong><br />Future Experience Lab
-            är ett innovationsinitiativ för att stärka upplevelsedestinationen
-            Göteborg med särskilt fokus på hybridupplevelser som bidrar till
-            samhällsförändring.<br />
-          </p>
-
-          <p class="text-fel-white m-8 text-lg">
-            Initiativtagare är UIrica Ramstedt från förändringsbyrån Marlon,
-            Johan Carlberg från Yrgo och Christer Hedberg och Anna-Maria Ölander
-            från samarbetsbyrån &friends.
-          </p>
-        </div>
-
-        <div class="bg-fel-yellow pb-[700px]">
-          <h2 class="text-fel-black text-center mt-24 text-8xl font-bold">
-            När FEL<br />är Rätt.
-          </h2>
-        </div>
+              <path
+                d="M0 41.5L48.4615 0V34.5833L90 34.5833V48.4167L48.4615 48.4167L48.4615 83L0 41.5Z"
+              />
+            </svg>
+            <p class="font-bold text-h4">Alla labbar</p>
+          </div>
+        </a>
       </div>
       <img
-        class="z-20 w-screen -mt-96"
+        class="z-20 w-screen absolute bottom-10"
         src="images/Full width image.png"
         alt=""
       />
-      <div class="w-11/12 bg-fel-red pt-5 mt-9">
-        <h2 class="leading-none text-fel-white text-h2 m-8 mt-14 font-bold">
-          Senaste<br />
-          Projekten:
-        </h2>
-        <div class="z-20 w-11/12 relative h-fit">
-          <img class="h-full w-full" src="images/big image.png" alt="" />
+    </div>
+
+    <div class="w-11/12 bg-fel-red pt-5 mt-9 -z-40 ml-3 relative pb-10">
+      <h2 class="leading-none text-fel-white text-h2 m-8 mt-14 font-bold">
+        Senaste Labben.
+      </h2>
+
+      <div>
+        <div class="w-11/12 relative z-10 h-fit">
+          <img class="h-full w-full -ml-3" src="images/big image.png" alt="" />
           <h2
-            class="text-h2 text-fel-white absolute bottom-0 z-30 font-bold m-8 ml-16"
+            class="text-h2 text-fel-white absolute bottom-0 z-10 font-bold m-8 ml-16"
           >
             LAB01.
           </h2>
@@ -113,13 +130,25 @@
           </p>
         </div>
         <div
-          class="grid grid-cols-2 max-w-full bg-fel-white p-8 gap-8 -mt-28 pr-2"
+          class="grid grid-rows-2 grid-cols-items bg-fel-white p-8 gap-8 -mt-6 pr-2 absolute -right-2/3 -z-30 h-fit"
         >
-          <div class="col-span-2 flex justify-end -mr-2">
-            <img src="vänster.svg" />
+          <div
+            class="row-span-2 w-min flex flex-col items-center justify-center gap-20"
+          >
+            <img src="vänster.svg" class="w-12" />
+            <p
+              class="origin-center -rotate-90 text-h3 font-bold whitespace-nowrap"
+            >
+              Visa fler.
+            </p>
           </div>
-          <div class="relative w-full">
-            <img class="w-full" src="images/Barnsjukhus.png" alt="" />
+          <div class="w-full h-full relative">
+            <img
+              class="w-full"
+              class="relative"
+              src="images/Barnsjukhus.png"
+              alt=""
+            />
             <p class="text-fel-white font-bold text-xl absolute bottom-0 z-30">
               Drottning<br />
               Silvias<br />
@@ -149,13 +178,14 @@
           </div>
         </div>
       </div>
-      <div
-        class="bg-fel-red w-fit -mt-8 flex items-center justify-around py-[40px] gap-[34px] px-[34px]"
-      >
-        <a class="font-bold text-h3">Läs mer.</a>
-        <img class="" src="Vector.svg" />
-      </div>
-    </main>
+    </div>
+
+    <div
+      class="bg-fel-yellow w-fit -mt-8 flex items-center justify-around py-[40px] gap-[34px] px-[34px]"
+    >
+      <a class="font-bold text-h3">Läs mer.</a>
+      <img class="" src="Vector.svg" />
+    </div>
 
     <footer class="grid grid-cols-2 pt-16">
       <img
@@ -173,7 +203,7 @@
       </div>
       <div class="relative h-full w-full col-start-2 row-start-1">
         <a
-          class="absolute top-[55%] left-[40%] text-5xl text-fel-yellow"
+          class="absolute top-[55%] left-[40%] text-5xl text-fel-yellow font-bold"
           href="mailto:mail@test.com"
           >Kontakta oss</a
         >

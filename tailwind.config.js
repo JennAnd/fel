@@ -6,7 +6,7 @@ module.exports = {
         "fel-black": "#1f1f1f",
         "fel-white": "#f9f8f4",
         "fel-yellow": "#fffc46",
-        "fel-blue": "#2522ca",
+        "fel-blue": "#3431D7",
         "fel-red": "#db294b",
       },
       backgroundImage: {
@@ -18,6 +18,9 @@ module.exports = {
         h3: "52px",
         h4: "32px",
         normal: "20px",
+      },
+      gridTemplateColumns: {
+        items: "min-content repeat(3, minmax(0,1fr))",
       },
     },
   },
