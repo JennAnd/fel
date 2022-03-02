@@ -10,7 +10,7 @@ module.exports = {
         "fel-red": "#db294b",
       },
       backgroundImage: {
-        hero: 'url("../images/hero.png")',
+        hero: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/hero.png")',
         "paper-red": "url('../images/redpaper.png')",
         "paper-blue": "url('../images/bluepaper.png')",
       },
