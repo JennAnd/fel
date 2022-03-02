@@ -10,7 +10,7 @@ module.exports = {
         "fel-red": "#db294b",
       },
       backgroundImage: {
-        hero: 'url("http://via.placeholder.com/1920x1080")',
+        hero: 'url("../images/hero.png")',
         "paper-red": "url('../images/redpaper.png')",
         "paper-blue": "url('../images/bluepaper.png')",
       },

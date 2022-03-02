@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  font-family: "Reem Kufi";
+  color: #333;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+/*HERO SECTION*/
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0e6e1;
+}
+
+.hero-section img {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  object-position: 88%;
+}
+
+.hero-text-container {
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero-section p {
+  margin-left: 10%;
+  margin-top: 20%;
+  font-size: 1.8em;
+  line-height: 1.3em;
+}
+
+.header-container {
+  position: absolute;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.hero-section h1 {
+  margin-left: 5%;
+  font-size: 2.6em;
+  margin: 0;
+}
+
+.hero-section h3 {
+  margin-left: 5%;
+  margin: 0;
+  transform: translateY(-15px);
+}
+
+.hamburger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  transform: translateX(calc(100vw - 65px));
+  margin-top: 15px;
+}
+
+.hamburger-single-bar {
+  height: 5px;
+  width: 40px;
+  background-color: #333;
+  border-radius: 100px;
+}
+
+.down-arrow {
+  width: 100vw;
+  height: 30px;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+}
+/*NEWS SECTION*/
+
+.news-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.news-text-container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-images-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-images-container img {
+  width: 48.75vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-title-container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-button {
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1.6rem;
+  padding: 6px 20px;
+  margin-bottom: 25px;
+}
+
+/*BUY SECTION*/
+.buy-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-image-container {
+  position: relative;
+}
+
+.text-image-container img {
+  width: 100vw;
+}
+
+.text-image-container h3 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 3em;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.glasses-grid-container {
+  display: grid;
+  gap: 6vw;
+  grid-template-columns: 41vw 41vw;
+  grid-template-rows: 41vw 41vw 41vw;
+  height: 141vw;
+  width: 94vw;
+  margin-left: 6vw;
+  margin-top: 6vw;
+}
+
+.product-button {
+  border: none;
+  padding: 0;
+  position: relative;
+  background-color: #f7f5f4;
+}
+
+.product-button img {
+  width: 80%;
+  height: 80%;
+  transform: translateY(-10%);
+}
+
+.product-button p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 18%;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.browse-button-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.browse-button {
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1.6rem;
+  padding: 4px 40px;
+  transform: translateY(-55%);
+}
+
+.about-section p {
+  margin: 2rem 6vw;
+  text-align: justify;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.small-text a {
+  color: #333;
+}
+
+.footer-section {
+  background-color: black;
+}
+
+.footer-section p,
+a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer-section h3 {
+  color: white;
+
+  margin: 3rem 0 0 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-media-img-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
