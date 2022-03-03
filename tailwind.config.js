@@ -10,9 +10,9 @@ module.exports = {
         "fel-red": "#db294b",
       },
       backgroundImage: {
-        hero: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/hero.png")',
-        "paper-red": "url('../images/redpaper.png')",
-        "paper-blue": "url('../images/bluepaper.png')",
+        hero: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/hero.webp")',
+        "paper-red": "url('../images/redpaper.webp')",
+        "paper-blue": "url('../images/bluepaper.webp')",
       },
       fontSize: {
         h1: "222px",
