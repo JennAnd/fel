@@ -23,6 +23,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         items: "70px repeat(3, minmax(0,1fr))",
+        "narrow-left": "1fr 80px",
       },
     },
   },
