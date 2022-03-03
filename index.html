@@ -12,6 +12,34 @@
     <title>fel</title>
   </head>
   <body class="scroll-p-full w-screen bg-fel-black overflow-x-hidden">
+    <div
+      class="mobilenav hidden h-screen w-screen max-w-screen fixed bg-fel-black z-[300]"
+    >
+      <div class="flex flex-col items-end mt-16 mr-6">
+        <button
+          class="flex flex-col gap-1 text-h3 relative w-8 h-8"
+          onclick="toggleNav()"
+        >
+          <div
+            class="w-8 h-1 rounded-md bg-fel-yellow rotate-45 absolute"
+          ></div>
+          <div
+            class="w-8 h-1 rounded-md bg-fel-yellow -rotate-45 absolute"
+          ></div>
+        </button>
+
+        <a href="#" class="py-4 px-6 text-h3 font-bold text-fel-white active"
+          >Hem.</a
+        >
+        <a href="#" class="py-4 px-6 text-h3 font-bold text-fel-white"
+          >Projekt.</a
+        >
+        <a href="#" class="py-4 px-6 text-h3 font-bold text-fel-white"
+          >Kontakt.</a
+        >
+      </div>
+      <img src="images/logo.svg" class="w-[95%] mt-16 mx-auto" />
+    </div>
     <header
       class="w-screen bg-hero bg-center bg-cover h-screen transition-all relative z-100"
     >
@@ -23,7 +51,7 @@
           class="col-start-1 col-span-full h-2/3 z-10 row-span-full self-center"
         />
 
-        <nav class="w-full col-start-2 row-start-1 pb-12 relative">
+        <nav class="w-full col-start-2 row-start-1 pb-12 relative text-right">
           <div class="hidden md:flex gap-4 w-full items-end justify-center">
             <a
               href="#"
@@ -37,7 +65,14 @@
               >Kontakt.</a
             >
           </div>
-          <div class="inline-block md:hidden text-h3">=</div>
+          <button
+            class="inline-flex flex-col gap-1 md:hidden text-h3"
+            onclick="toggleNav()"
+          >
+            <div class="w-8 h-1 rounded-md bg-fel-yellow"></div>
+            <div class="w-8 h-1 rounded-md bg-fel-yellow"></div>
+            <div class="w-8 h-1 rounded-md bg-fel-yellow"></div>
+          </button>
         </nav>
       </div>
     </header>
@@ -273,4 +308,5 @@
     </footer>
   </body>
   <script src="scripts/scroll.js"></script>
+  <script src="scripts/open.js"></script>
 </html>
